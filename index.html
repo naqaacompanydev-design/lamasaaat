@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لمسات كلين | تنظيف المنازل والشركات وعزل الخزانات</title>
+<meta name="description" content="لمسات كلين: تنظيف المنازل والفلل والشركات والمحلات والمجالس، تنظيف الخزانات وعزلها، ومكافحة الحشرات. اتصل أو راسلنا واتساب 0548689485.">
+<meta name="theme-color" content="#0d7480">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d7480'/%3E%3Cpath d='M8 22a8 8 0 0 1 16 0' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f9fa;--surface:#ecf0f2;--ink:#1f3038;--muted:#5d6b72;--accent:#0d7480;--accent-2:#0a5e68;--wa:#1fa855;--r:18px;--wrap:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;font-size:17px;line-height:1.75;overflow-x:hidden}
+h1,h2,h3{font-family:"Readex Pro",sans-serif;font-weight:500;line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
+.muted{color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:500;font-size:16px;transition:transform .2s,box-shadow .2s,background .2s;border:1.5px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(13,116,128,.55)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{box-shadow:0 10px 24px -10px rgba(31,168,85,.6)}
+.btn-ghost{border-color:color-mix(in srgb,var(--ink) 22%,transparent)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);box-shadow:none}
+.btn svg{width:18px;height:18px}
+
+/* nav */
+header{position:fixed;inset-inline:0;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-color:color-mix(in srgb,var(--ink) 10%,transparent)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Readex Pro";font-weight:600;font-size:20px}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center}
+.logo i::after{content:"";width:14px;height:7px;border:3px solid #fff;border-bottom:0;border-radius:14px 14px 0 0;margin-top:5px}
+.links{display:flex;gap:28px;font-size:15px}
+.links a{position:relative;padding:6px 0}
+.links a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--accent);transform:scaleX(0);transition:transform .3s;transform-origin:right}
+.links a:hover::after{transform:scaleX(1)}
+
+/* hero */
+.hero{min-height:100svh;padding:110px 0 48px;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+.kicker b{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(13,116,128,.5)}70%{box-shadow:0 0 0 10px rgba(13,116,128,0)}100%{box-shadow:0 0 0 0 rgba(13,116,128,0)}}
+.hero h1{font-size:clamp(38px,5.4vw,68px);margin-bottom:20px}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:30em;margin-bottom:32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;gap:32px;margin-top:40px;padding-top:24px;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.facts strong{display:block;font-family:"Readex Pro";font-size:26px;font-weight:500;color:var(--accent)}
+.facts span{font-size:14px;color:var(--muted)}
+.hero-media{position:relative;height:min(640px,72svh);border-radius:var(--r);overflow:hidden}
+.hero-media img{transform:scale(1.08);animation:zoomIn 1.6s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes zoomIn{to{transform:scale(1)}}
+.float{position:absolute;bottom:22px;inset-inline-end:22px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 18px 40px -18px rgba(0,0,0,.35);animation:floaty 4s ease-in-out infinite}
+.float small{display:block;color:var(--muted);font-size:13px}
+.float b{font-family:"Readex Pro";font-weight:500}
+@keyframes floaty{50%{transform:translateY(-8px)}}
+.enter{opacity:0;transform:translateY(24px);animation:enter .9s cubic-bezier(.2,.7,.2,1) forwards}
+.enter:nth-child(2){animation-delay:.1s}.enter:nth-child(3){animation-delay:.2s}.enter:nth-child(4){animation-delay:.3s}.enter:nth-child(5){animation-delay:.4s}
+@keyframes enter{to{opacity:1;transform:none}}
+
+/* sections */
+section.block{padding:110px 0}
+.head{margin-bottom:48px;max-width:720px}
+.head h2{font-size:clamp(30px,3.6vw,46px)}
+.head h2 span{color:var(--muted)}
+
+/* services peek */
+.peek{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:stretch}
+.rows{list-style:none}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:20px 16px;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent);cursor:pointer;border-radius:12px;transition:background .25s,padding .25s}
+.rows li:last-child{border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.rows li h3{font-size:21px;transition:color .25s}
+.rows li p{grid-column:1/-1;color:var(--muted);font-size:15px}
+.rows li em{font-style:normal;font-size:13px;color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent);padding:2px 10px;border-radius:999px;align-self:center}
+.rows li.on{background:var(--surface);padding-inline:24px}
+.rows li.on h3{color:var(--accent)}
+.peek-media{position:relative;border-radius:var(--r);overflow:hidden;min-height:480px}
+.peek-media img{position:absolute;inset:0;opacity:0;transform:scale(1.06);transition:opacity .6s,transform 1.2s}
+.peek-media img.on{opacity:1;transform:scale(1)}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -24px rgba(31,48,56,.35)}
+.card .ph{height:240px;overflow:hidden}
+.card .ph img{transition:transform .6s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .tx{padding:24px}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+
+/* statement */
+.statement{background:var(--ink);color:#fff;padding:140px 0}
+.statement small{display:block;color:#9ea7ab;margin-bottom:18px;font-size:14px}
+.statement p{font-family:"Readex Pro";font-size:clamp(28px,3.8vw,50px);line-height:1.5;max-width:1000px}
+.statement p .w{opacity:.22;transition:opacity .4s,color .4s}
+.statement p .w.lit{opacity:1}
+.statement p .w.key.lit{color:#5fd0db}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border-radius:var(--r);padding:28px;position:relative;transition:transform .3s}
+.step:hover{transform:translateY(-4px)}
+.step::before{counter-increment:s;content:counter(s,arabic-indic);display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-family:"Readex Pro";font-size:22px;margin-bottom:18px}
+.step h3{font-size:20px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.how-photo{margin-top:24px;height:360px;border-radius:var(--r);overflow:hidden}
+
+/* contact */
+.contact{background:var(--accent);color:#fff;border-radius:28px;padding:72px 56px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.07);inset-inline-start:-120px;top:-160px;animation:floaty 7s ease-in-out infinite}
+.contact h2{font-size:clamp(30px,3.6vw,48px);margin-bottom:10px}
+.contact p{color:#d4ecee;font-size:18px}
+.phone{font-family:"Readex Pro";font-size:clamp(28px,3vw,40px);direction:ltr;display:inline-block;margin-top:14px;letter-spacing:.04em}
+.contact .btns{justify-content:flex-end;position:relative}
+.contact .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.contact .btn-ghost:hover{background:#fff;color:var(--accent)}
+
+footer{padding:48px 0 32px;font-size:14px;color:var(--muted)}
+footer .row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer details{margin-top:16px;font-size:12px}
+footer details a{text-decoration:underline}
+
+/* floating whatsapp */
+.wa-float{position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(31,168,85,.6);transition:transform .2s;animation:pulseWa 2.6s infinite}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@keyframes pulseWa{0%{box-shadow:0 0 0 0 rgba(31,168,85,.5)}70%{box-shadow:0 0 0 16px rgba(31,168,85,0)}100%{box-shadow:0 0 0 0 rgba(31,168,85,0)}}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .links{display:none}
+  .hero-grid,.peek,.contact{grid-template-columns:1fr}
+  .hero{padding-top:96px}
+  .hero-media{height:360px;order:-1}
+  .peek-media{min-height:300px;order:-1}
+  .cards{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .contact{padding:48px 24px}
+  .contact .btns{justify-content:flex-start}
+  section.block{padding:80px 0}
+  .nav .btn{display:none}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:1fr}
+  .btns .btn{flex:1 1 100%}
+  .facts{gap:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.enter{opacity:1;transform:none}
+  .statement p .w{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>لمسات كلين</a>
+    <nav class="links" aria-label="القائمة">
+      <a href="#services">التنظيف</a>
+      <a href="#tanks">الخزانات والحشرات</a>
+      <a href="#how">طريقة العمل</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+966548689485">اتصل الآن</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker enter"><b></b>8 خدمات: تنظيف، عزل خزانات، مكافحة حشرات</p>
+        <h1 class="enter">تنظيف المنازل والشركات <span>وعزل الخزانات</span></h1>
+        <p class="lead enter">ننظف البيوت والفلل والمكاتب والمحلات والمجالس، نغسل الخزانات ونعزلها، ونكافح الحشرات. ثماني خدمات من فريق واحد، بمكالمة واحدة.</p>
+        <div class="btns enter">
+          <a class="btn btn-wa" href="https://wa.me/966548689485" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>اطلب عرض سعر واتساب</a>
+          <a class="btn btn-ghost" href="#services">تصفّح الخدمات</a>
+        </div>
+        <div class="facts enter">
+          <div><strong>8</strong><span>خدمات</span></div>
+          <div><strong>فريق واحد</strong><span>لكل الخدمات</span></div>
+          <div><strong dir="ltr">0548689485</strong><span>اتصال وواتساب</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cleaning_windows.jpg?width=1280" alt="عامل يمسح زجاج نافذة بممسحة مطاطية" fetchpriority="high">
+        <div class="float"><small>من الشقة إلى الخزان</small><b>تنظيف · عزل · مكافحة</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <div class="head rv"><h2>خدمات التنظيف <span>للبيت والعمل والضيافة.</span></h2></div>
+      <div class="peek">
+        <ul class="rows rv">
+          <li class="on" data-k="0" tabindex="0"><h3>تنظيف المنازل</h3><em>سكني</em><p>الغرف والمطبخ والحمامات والأرضيات، تنظيف دوري أو شامل.</p></li>
+          <li data-k="1" tabindex="0"><h3>تنظيف الفلل</h3><em>سكني</em><p>كل الأدوار والواجهات الزجاجية والأحواش، في زيارة واحدة.</p></li>
+          <li data-k="2" tabindex="0"><h3>تنظيف الشركات</h3><em>تجاري</em><p>المكاتب وقاعات الاجتماعات والممرات، خارج ساعات الدوام.</p></li>
+          <li data-k="3" tabindex="0"><h3>تنظيف المحلات التجارية</h3><em>تجاري</em><p>الواجهات والأرضيات والرفوف قبل الافتتاح أو بعد الإغلاق.</p></li>
+          <li data-k="4" tabindex="0"><h3>تنظيف المجالس</h3><em>ضيافة</em><p>الكنب العربي والسجاد والمساند، تنظيف عميق بالبخار.</p></li>
+        </ul>
+        <div class="peek-media rv">
+          <img class="on" src="https://commons.wikimedia.org/wiki/Special:FilePath/Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg?width=1200" alt="غرفة معيشة نظيفة" loading="lazy">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Modern_luxury_living_room_with_kitchen_interior.jpg?width=1200" alt="مطبخ فيلا حديث" loading="lazy">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Window_cleaning_20220408_111417.jpg?width=1200" alt="تنظيف زجاج برج مكاتب" loading="lazy">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Floor_cleaner_inside_Sullivan_Hall.jpg?width=1200" alt="ماكينة تنظيف أرضيات تجارية" loading="lazy">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_a_traditional_majlis_in_northern_Qatar.jpg?width=1200" alt="مجلس عربي بجلسات وسجاد" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="tanks" style="padding-top:0">
+    <div class="wrap">
+      <div class="head rv"><h2>الخزانات والحشرات <span>مياه نظيفة وبيت بلا حشرات.</span></h2></div>
+      <div class="cards">
+        <article class="card rv"><div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/House_with_water_storage_tank_in_Dober,_Albania_(6666974933).jpg?width=800" alt="خزان مياه علوي فوق سطح منزل" loading="lazy"></div><div class="tx"><h3>تنظيف الخزانات</h3><p>تفريغ الخزان وإزالة الرواسب وغسله وتعقيمه، أرضياً كان أو علوياً.</p></div></article>
+        <article class="card rv"><div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eternit_Water_Tank_-_September_2010_-_(2).jpg?width=800" alt="خزان مياه يحتاج إلى عزل" loading="lazy"></div><div class="tx"><h3>عزل الخزانات</h3><p>عزل مائي للجدران والأرضية يوقف التسريب ويحمي المياه من التلوث.</p></div></article>
+        <article class="card rv"><div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_day_in_the_life-_Pest_Management_Journeyman.jpeg?width=800" alt="فني مكافحة حشرات يرش" loading="lazy"></div><div class="tx"><h3>مكافحة الحشرات</h3><p>رش للصراصير والنمل والبق والقوارض داخل البيت وفي المنشآت.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div class="wrap">
+      <small>وعد لمسات كلين</small>
+      <p id="promise">نبدأ من أصعب ركن في المكان، ونعامل البيت والمكتب والخزان بنفس الدقة، ولا نغادر قبل أن تمرّ على كل غرفة وتقول بنفسك إنها <span class="key">نظيفة.</span></p>
+    </div>
+  </section>
+
+  <section class="block" id="how">
+    <div class="wrap">
+      <div class="head rv"><h2>طريقة العمل <span>أربع خطوات من المكالمة إلى الاستلام.</span></h2></div>
+      <div class="steps">
+        <div class="step rv"><h3>تواصل معنا</h3><p>اتصل أو أرسل واتساب، وحدّد الخدمة والمكان.</p></div>
+        <div class="step rv"><h3>اتفاق واضح</h3><p>نتفق على الموعد والسعر قبل أن نبدأ.</p></div>
+        <div class="step rv"><h3>وصول الفريق</h3><p>يصل الفريق بمعداته ومواد التنظيف في الموعد.</p></div>
+        <div class="step rv"><h3>الاستلام</h3><p>تراجع المكان معنا وتستلمه وهو جاهز.</p></div>
+      </div>
+      <div class="how-photo rv"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grundreinigung-Fliesenboden.jpg?width=1400" alt="ماكينة جلي تنظف أرضية بلاط" loading="lazy" style="object-position:50% 70%"></div>
+    </div>
+  </section>
+
+  <section class="block" id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact rv">
+        <div>
+          <h2>اطلب عرض سعر</h2>
+          <p>اتصل بنا أو راسلنا على واتساب، وقل لنا الخدمة والمكان.</p>
+          <a class="phone" href="tel:+966548689485">0548689485</a>
+        </div>
+        <div class="btns">
+          <a class="btn btn-wa" href="https://wa.me/966548689485" target="_blank" rel="noopener">راسلنا واتساب</a>
+          <a class="btn btn-ghost" href="tel:+966548689485">اتصل الآن</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <a class="logo" href="#top"><i aria-hidden="true"></i>لمسات كلين</a>
+      <span>© 2026 لمسات كلين · تنظيف وعزل خزانات ومكافحة حشرات</span>
+    </div>
+    <details><summary>مصادر الصور (Wikimedia Commons)</summary>
+      <p dir="ltr">Photos: Andrés Nieto Porras (CC BY-SA 2.0), Shixart1985 (CC BY 2.0), Ka23 13 (CC BY-SA 4.0), Ktr101 (CC BY-SA 3.0), Lawrence Wang (CC BY-SA 2.0), SuSanA Secretariat (CC BY 2.0), Jacopo Werther (PD), Savannah Waters (PD), Moritz Borkowski (CC BY-SA 4.0) — via <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+    </details>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/966548689485" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+
+<script>
+// header border on scroll
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+
+// services: photo follows the row under the pointer
+const rows=[...document.querySelectorAll('.rows li')],imgs=[...document.querySelectorAll('.peek-media img')];
+const show=k=>{rows.forEach(r=>r.classList.toggle('on',r.dataset.k==k));imgs.forEach((m,i)=>m.classList.toggle('on',i==k))};
+rows.forEach(r=>['mouseenter','focus','click'].forEach(ev=>r.addEventListener(ev,()=>show(r.dataset.k))));
+
+// promise: words light up as you scroll
+const p=document.getElementById('promise');
+const key=p.querySelector('.key').textContent;p.querySelector('.key').remove();
+p.innerHTML=p.textContent.trim().split(/\s+/).map(w=>`<span class="w">${w}</span>`).join(' ')+` <span class="w key">${key}</span>`;
+const ws=[...p.querySelectorAll('.w')];
+const lite=()=>{const r=p.getBoundingClientRect(),h=innerHeight;const t=Math.min(1,Math.max(0,(h*.85-r.top)/(r.height+h*.35)));const n=Math.round(t*ws.length);ws.forEach((w,i)=>w.classList.toggle('lit',i<n))};
+addEventListener('scroll',lite,{passive:true});lite();
+</script>
+</body>
+</html>
