@@ -38,7 +38,10 @@ header{position:fixed;inset-inline:0;top:0;z-index:50;background:color-mix(in sr
 header.scrolled{border-color:color-mix(in srgb,var(--ink) 10%,transparent)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
 .logo{display:flex;align-items:center;gap:10px;font-family:"Readex Pro";font-weight:600;font-size:20px}
-.logo i{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center}
+.logo{font-size:18px;white-space:nowrap}
+@media (max-width:1100px){.links{gap:18px}}
+@media (max-width:520px){.logo{font-size:15px;white-space:normal;line-height:1.35}}
+.logo i{flex:none;width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center}
 .logo i::after{content:"";width:14px;height:7px;border:3px solid #fff;border-bottom:0;border-radius:14px 14px 0 0;margin-top:5px}
 .links{display:flex;gap:28px;font-size:15px}
 .links a{position:relative;padding:6px 0}
@@ -171,7 +174,7 @@ footer details a{text-decoration:underline}
 
 <header id="hdr">
   <div class="wrap nav">
-    <a class="logo" href="#top"><i aria-hidden="true"></i>لمسات كلين</a>
+    <a class="logo" href="#top"><i aria-hidden="true"></i>شركة لمسات كلين للتنظيف وعزل الخزانات</a>
     <nav class="links" aria-label="القائمة">
       <a href="#services">التنظيف</a>
       <a href="#tanks">الخزانات والحشرات</a>
@@ -279,7 +282,7 @@ footer details a{text-decoration:underline}
 <footer>
   <div class="wrap">
     <div class="row">
-      <a class="logo" href="#top"><i aria-hidden="true"></i>لمسات كلين</a>
+      <a class="logo" href="#top"><i aria-hidden="true"></i>شركة لمسات كلين للتنظيف وعزل الخزانات</a>
       <span>© 2026 لمسات كلين · تنظيف وعزل خزانات ومكافحة حشرات</span>
     </div>
     <details><summary>مصادر الصور (Wikimedia Commons)</summary>
